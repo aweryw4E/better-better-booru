@@ -217,7 +217,7 @@ function bbbScript() { // Wrapper for injecting the script into the document.
 
 	document.bbbInfo = function(name, value) {
 		// Document specific bbbInfo that goes along with the element prototype method.
-		var imgContainer = document.getElementById("image-container");
+		var imgContainer = document.getElementsByClassName("image-container")[0];
 
 		if (typeof(value) !== "undefined" && imgContainer)
 			imgContainer.setAttribute("data-" + name, value);
